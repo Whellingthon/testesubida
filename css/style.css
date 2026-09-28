@@ -1,0 +1,43 @@
+/* Área de Contato do Gerente */
+.area-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+#input-telefone {
+    width: 100%;
+    font-size: 3rem; /* Input gigante para toque fácil */
+    padding: 1.5rem;
+    border: 4px solid #1a2b4c;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+#input-telefone:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 15px rgba(30,144,255,0.5);
+}
+
+.btn-enviar {
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4757;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255,71,87,0.3);
+    width: 100%;
+}
+
+.btn-enviar:active {
+    transform: scale(0.95);
+}

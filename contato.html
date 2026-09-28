@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totem CSAT - Contato Gerencial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarTimeout()"> <!-- O timer de abandono inicia ao abrir a página -->
+    
+    <main class="totem-container">
+        <section class="tela ativa">
+            <header>
+                <h1>Lamentamos profundamente pelo péssimo atendimento.</h1>
+                <p>Por favor, deixe seu telefone (WhatsApp) para que nosso gerente entre em contato imediatamente:</p>
+            </header>
+            
+            <div class="area-input">
+                <input type="tel" id="input-telefone" placeholder="(12) 99999-9999" autocomplete="off">
+                <button class="btn-enviar" onclick="finalizarComTelefone()">Enviar para o Gerente</button>
+            </div>
+            
+            <button class="btn-voltar" onclick="voltarInicio()">Cancelar</button>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

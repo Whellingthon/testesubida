@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Qualidade - Dashboard CSAT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importação da biblioteca Chart.js -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="titulo">
+                <h1>Painel de Qualidade (CSAT)</h1>
+                <p>Monitoramento em tempo real do refeitório</p>
+            </div>
+            <div class="kpi-card">
+                <h2>Total de Avaliações</h2>
+                <p id="total-votos">0</p>
+            </div>
+        </header>
+
+        <section class="charts-section">
+            <!-- Gráfico de Disco (Pizza) -->
+            <div class="chart-container">
+                <h3>Distribuição de Satisfação</h3>
+                <canvas id="graficoPizza"></canvas>
+            </div>
+
+            <!-- Gráfico de Barras -->
+            <div class="chart-container">
+                <h3>Motivos de Insatisfação</h3>
+                <canvas id="graficoBarras"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

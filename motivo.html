@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totem CSAT - Motivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarTimeout()"> <!-- O timer inicia ao carregar a página -->
+    <main class="totem-container">
+        <section class="tela ativa">
+            <header>
+                <h1>Lamentamos muito pela sua experiência ruim.</h1>
+                <p>Poderia compartilhar com a gente qual parte do serviço não te agradou?</p>
+            </header>
+            <div class="botoes-motivo">
+                <button class="btn-acao" onclick="finalizarComMotivo('Comida')">🍲 Comida</button>
+                <button class="btn-acao" onclick="finalizarComMotivo('Atendimento')">🗣️ Atendimento</button>
+                <button class="btn-acao" onclick="finalizarComMotivo('Limpeza')">🧹 Limpeza</button>
+            </div>
+            <button class="btn-voltar" onclick="voltarInicio()">Cancelar</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
